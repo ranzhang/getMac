@@ -1,0 +1,1 @@
+A simple bash script to curl the api.macaddress.io site with a known MAC address and the script will return the company name the MAC address belongs to. You must use your own API key.
