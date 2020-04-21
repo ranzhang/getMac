@@ -17,8 +17,8 @@ function main(){
   macJson=$(curl -s "$call")
 
   echo "The company of the MAC address: "
-  echo $macJson | grep -Po '"companyName":.*?[^\\]",'
-
+  echo $macJson | grep -Po '"companyName":"\K[a-zA-Z,\s]*[^",]'
+ 
 }
 
 main
